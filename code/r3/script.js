@@ -10,7 +10,7 @@ const mostrarData = (data) => {
     console.log(data);
     let body = ''
     for (let i = 0; i < data.length; i++) {
-        body += `<tr><td>${data[i].author}</td><td>${data[i].category}</td><td>${data[i].title}</td><td>${data[i].source}</td></tr>`      
+        body += `<tr><td data-label="Autor">${data[i].author}</td><td data-label="Categoría">${data[i].category}</td><td data-label="Título">${data[i].title}</td><td data-label="Fuente">${data[i].source}</td></tr>`      
     }
     document.getElementById('data').innerHTML = body;
 }

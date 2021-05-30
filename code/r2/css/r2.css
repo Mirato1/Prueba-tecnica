@@ -17,8 +17,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  color: #222;
-
+  color: #0098FA;
+  background-color: #090C10;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

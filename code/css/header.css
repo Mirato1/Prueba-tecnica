@@ -1,10 +1,9 @@
 .header{
     left: 0;
     top: 0;
-    z-index: 999;
     width: 100%;
     font-weight: 600;
-    background-color: #fffbe6;
+    background-color: #212121;
     min-width: 320px;
 }
 
@@ -28,7 +27,7 @@ ul{
 }
 
 a {
-  color: #509ee3;
+  color: #00C6CF;
   text-decoration: none;
   transition: all 0.5s ease-out;
   font-size: 2rem;
@@ -36,16 +35,17 @@ a {
 
 a:hover {
   opacity: 0.75;
+  color: #08fd76;
 }
 
 /* FOOTER */
 
 .footer{
-    background-color: #0d3251;
-    color: #fff;
+    background-color: #212121;
+    color: #D3FBD8;
     text-align: center;
     font-weight: 400;
-    padding: 0.5rem;
+    padding: 0.1rem;
     width: 100vw;
     min-width: 320px;
     bottom: 0;
