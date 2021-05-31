@@ -23,3 +23,130 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.section {
+  padding: 2rem 1rem;
+}
+
+/* VIDEO */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.video{
+  position: relative;
+  padding-bottom: 56.25%; /* 16/9 ratio */
+  padding-top: 30px; /* IE6 workaround*/
+  height: 0;
+}
+
+.video video,
+.video object,
+.video embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+/* CONTENIDO */
+
+.container h1{
+  color: #d90062;
+  font-size: 3rem;
+}
+
+.container p{
+  font-size: 1.1rem;
+}
+
+.modal{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+}
+
+.video__popup{
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.modal__close{
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  z-index: 999;
+}
+
+.modal__close svg{
+  width: 3rem;
+  height: 3rem;
+  fill: #d90062;
+}
+
+.revelar{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 767px) {
+  a{
+    font-size: 1.3rem;
+  }
+
+  .modal__video{
+    position: initial;
+  }
+
+  .modal__close{
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+@media(min-width: 1024px){
+  .total{
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: space-between;
+    align-content: center;
+  }
+  
+  .video__popup{
+    position: relative;
+  }
+
+  .video video,
+  .video object,
+  .video embed {
+  position: inherit;
+  height: auto;
+  }
+
+  .modal__close{
+    top: 5rem;
+    right: 1rem;
+  }
+
+  .video{
+    position: relative;
+  }
+}

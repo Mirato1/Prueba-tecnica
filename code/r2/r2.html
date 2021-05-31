@@ -21,11 +21,43 @@
     </header>
 
     <main>
+        <section class="section">
+            <div class="container total">
+                <div class="container video"> 
+                    <a href="#" class="video__popup" id="abrirModal" role="button">
+                        <video src="./assets/video.mp4" frameborder="0" 
+                        allowfullscreen="allowfullscreen"></video>
+                    </a>              
+                </div>
+                <div class="container">
+                    <h1 class="section__title">Play mía en el lol</h1>
+                    <p>No sabía qué video poner así que elegí alguna play del hobbie que tengo y lo que juego todos los días.      
+                    <br> <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi totam dolor qui, optio ut, quisquam in impedit quo vitae nostrum aspernatur accusantium cumque. Nisi sapiente accusantium aperiam voluptate impedit.         
+                    lorem*4             
+                    </p>
+                </div>
+            </div>
+        </section>
 
+        <article class="modal">
+            <div class="modal__content">
+                <a href="#" id="cerrarModal" class="modal__close" role="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+                    </svg>
+                </a>
+                <div class="video modal__video"> 
+                    <video src="./assets/video.mp4" frameborder="0" 
+                    controls allowfullscreen="allowfullscreen"></video>
+                </div>
+            </div>
+        </article>
     </main>
 
     <footer class="footer">
         <p>Sitio hecho por Lucas Giménez.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
